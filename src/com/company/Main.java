@@ -34,10 +34,8 @@ public class Main {
 
         tipAmount = totalWithTax * tipPercentage;
 
-        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        NumberFormat nf = NumberFormat.getCurrencyInstance(); // formatted to currency
         nf.setGroupingUsed(true);
-        //nf.setMaximumFractionDigits(2);
-        //nf.setMinimumFractionDigits(2);
 
         System.out.println("Your total cost is " + nf.format(totalCost));
         System.out.println("The tax is " + taxPercentage * 100 + "%");
